@@ -67,8 +67,18 @@ engine:
     - script_translator
 
 menu:
-  alternative_select_keys: "QAZWSX"
-  page_size: 6
+  alternative_select_keys: "ASDFGHJK"
+  page_size: 8
+
+
+style:
+  candidate_format: "%c  %@"
+  font_face: "FZLTXHB--B51-0"
+  font_point: 20
+  label_font_point: 17
+  label_color: 0x999999
+  text_color: 0x101010 
+
 ############################### 濾鏡 ##################################
 simplifier:
   tips: all
