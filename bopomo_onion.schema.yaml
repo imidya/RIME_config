@@ -276,33 +276,6 @@ punctuator:
 #    "6" : [ ".com", ".org", ".net", ".co", ".gov", ".edu", ".info" ]
 #    "7" : [ ".tw", ".jp", ".kr", ".hk", ".cn", ".uk", ".us", ".de", ".fr", ".cc" ]
 ################################# 按鍵處理 ######################################
-key_binder:
-  import_preset: default
-  bindings:
-    - {accept: comma, send: comma, when: has_menu}
-    - {accept: period, send: period, when: has_menu}
-    - {accept: minus, send: minus, when: has_menu}
-    - {accept: equal, send: equal, when: has_menu}
-    - {accept: Left, send: Page_Up, when: paging} #直式選單用
-    - {accept: Right, send: Page_Down, when: paging} #直式選單用
-#    - {accept: Up, send: Page_Up, when: paging} #橫式選單用
-#    - {accept: Down, send: Page_Down, when: paging} #橫式選單用
-#    - {accept: Left, send: Left, when: has_menu} #橫式選單用
-#    - {accept: Right, send: Right, when: has_menu} #橫式選單用
-    - {accept: space, send: Return, when: paging} #fluency_editor模式下，方向鍵選字時，打space直接上屏
-    - {accept: BackSpace, send: Control+BackSpace, when: has_menu} #〔關〕刪除前一個拼音字符〔開〕：刪除整組拼音字符（一個字）
-    - {accept: Shift+BackSpace, send: BackSpace, when: has_menu}
-    - {accept: backslash, send: BackSpace, when: has_menu} #「\」鍵位刪除一個拼音字符。
-#    - {accept: Control+Shift+5, toggle: zh_tw, when: always}
-    - {accept: Tab, send: Shift+Left, when: paging} #測試# #於選單列選字時，回復到輸入列。
-    - {accept: 3, send: Escape, when: composing}
-    - {accept: 3, send: 3, when: has_menu}
-    - {accept: 4, send: Escape, when: composing}
-    - {accept: 4, send: 4, when: has_menu}
-    - {accept: 6, send: Escape, when: composing}
-    - {accept: 6, send: 6, when: has_menu}
-    - {accept: 7, send: Escape, when: composing}
-    - {accept: 7, send: 7, when: has_menu}
 
 editor:
   bindings:
